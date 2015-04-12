@@ -6,6 +6,19 @@ The source code was exported to GitHub from Google Code
 
 My additional functionality is noted in the original README document from the original repository along with some edits *(shown below)*.
 
+####Project installation
+- Download the release .zip
+- Use the hosted version:
+`//cdn.calcroft.co/jquery.loadmask-plus.min.js`
+`//cdn.calcroft.co/jquery.loadmask-plus.min.css`
+
+####Development install
+1. Get the source code `git clone https://github.com/robcalcroft/jquery-loadmask-plus.git`
+2. [Install Ruby](https://www.ruby-lang.org/en/downloads/)
+3. Install Compass `gem update --system && gem install compass`
+4. Install dependancies `npm install gulp jshint -g && npm install`
+5. Build out the source `gulp`
+
 ####Notes
 - Only use this on container elements; I have found that this does not play well with padding and causes an offset on the text.
 
