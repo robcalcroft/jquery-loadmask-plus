@@ -6,7 +6,7 @@ The source code was exported to GitHub from Google Code
 
 My additional functionality is noted in the original README document from the original repository along with some edits *(shown below)*.
 
-##Notes
+####Notes
 - Only use this on container elements; I have found that this does not play well with padding and causes an offset on the text.
 
 
