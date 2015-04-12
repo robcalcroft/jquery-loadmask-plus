@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="build/jquery.loadmask-plus.min.css">
+	<script src="http://code.jquery.com/jquery-latest.pack.js"></script>
+	<script src="build/jquery.loadmask-plus.min.js"></script>
+	<title>Example</title>
+</head>
+<body>
+	<h1>jquery-loadmask-plus demo</h1>
+	<button id='startLoad'>Click here to start the load</button>
+	<button id='stopLoad'>Click here to stop the load</button>
+	<button id='isMasked'>Is the area masked?</button>
+	<div class="loadarea">
+		This is an area that needs to load.
+	</div>
+	<h4>Please look through the source for this example file</h4>
+</body>
+	<style>
+		button {
+			margin: 20px 0;
+			display: block;
+		}
+		.loadarea {
+			width: 50%;
+			height: 150px;
+			border: 1px solid black;
+			text-align: center;
+		}
+	</style>
+	<script>
+		$(function() {
+			$('#startLoad').click(function() {
+				$('.loadarea').mask();
+			});
+
+			// Other Examples
+			// 
+			// $('#startLoad').click('click', function() {
+			// 	$('.loadarea').mask({
+			// 		iconColour: 'red',
+			// 		bgColour: 'blue'
+			// 	});
+			// });
+
+			// $('#startLoad').click('click', function() {
+			// 	$('.loadarea').mask({
+			// 		label: 'Loading...',
+			// 		delay: 500
+			// 	});
+			// });
+
+			$('#stopLoad').click(function() {
+				$('.loadarea').unmask();
+			});
+
+			$('#isMasked').click(function() {
+				alert($('.loadarea').isMasked() ? "Yes" : "No");
+			});
+		});
+	</script>
+</html>
