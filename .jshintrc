@@ -1,0 +1,13 @@
+{
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "freeze": true,
+    "latedef": true,
+    "maxerr": 10000,
+    "undef": true,
+    "predef": [
+      "jQuery",
+      "window"
+    ]
+}

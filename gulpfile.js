@@ -5,8 +5,7 @@ var gulp         = require('gulp'),
 	uglify       = require('gulp-uglify'),
 	jshint       = require('gulp-jshint'),
 	del          = require('del'),
-	rename       = require('gulp-rename'),
-	jshintConfig = require('./package').jshintConfig;
+	rename       = require('gulp-rename');
 
 // Build consts
 const JSFILES   = './src/js/*.js',
@@ -27,7 +26,7 @@ gulp.task('clean', function() {
 gulp.task('js', function() {
 	return gulp.src(JSFILES)
 			// JSHint
-			.pipe(jshint(jshintConfig))
+			.pipe(jshint())
 			.pipe(jshint.reporter('jshint-stylish'))
 			.pipe(jshint.reporter('fail'))
 

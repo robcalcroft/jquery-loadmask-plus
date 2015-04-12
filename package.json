@@ -4,7 +4,7 @@
   "description": "A fork of jquery-loadmask which intends to modernise the look and feel of the original plugin by way of CSS updates and improved API usage.",
   "main": "''",
   "scripts": {
-    "build": ""
+    "test": "node_modules/jshint/bin/jshint ./src/js/*.js"
   },
   "repository": {
     "type": "git",
@@ -26,19 +26,5 @@
     "gulp-uglify": "^1.2.0",
     "jshint": "^2.7.0",
     "jshint-stylish": "^1.0.1"
-  },
-  "jshintConfig": {
-    "bitwise": true,
-    "curly": true,
-    "eqeqeq": true,
-    "freeze": true,
-    "latedef": true,
-    "maxerr": 10000,
-    "undef": true,
-    "lookup": false,
-    "predef": [
-      "jQuery",
-      "window"
-    ]
   }
 }
