@@ -6,6 +6,9 @@ The source code was exported to GitHub from Google Code
 
 My additional functionality is noted in the original README document from the original repository along with some edits *(shown below)*.
 
+##Notes
+- Only use this on container elements; I have found that this does not play well with padding and causes an offset on the text.
+
 
 ---
 
@@ -39,6 +42,12 @@ $("#myDiv").mask({
   delay: 500
 });
 ```
+
+###Options can be:
+- `iconColour`
+- `bgColour`
+- `delay`
+- `label`
 
 The `delay` property sets a delay in milliseconds before element(s) is masked. If `unmask()` is called before the delay times out, no mask is displayed. This can be used to prevent unnecessary mask display for quick processes.
 
