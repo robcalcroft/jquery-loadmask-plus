@@ -65,4 +65,4 @@ gulp.task('remove-css', function() {
 	del(['./src/css'])
 });
 
-gulp.task('build', ['clean', 'js', 'scss', 'remove-css'])
+gulp.task('default', ['clean', 'js', 'scss', 'remove-css'])
