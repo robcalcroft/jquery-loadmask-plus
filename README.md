@@ -9,13 +9,17 @@ My additional functionality is noted in the original README document from the or
 ####Project installation
 - Download the release .zip
 - Use the hosted version:
-`//cdn.calcroft.co/jquery.loadmask-plus.min.js`
-`//cdn.calcroft.co/jquery.loadmask-plus.min.css`
+```
+//cdn.calcroft.co/jquery.loadmask-plus.min.js
+//cdn.calcroft.co/jquery.loadmask-plus.min.css
+```
 
 ####Development install
 1. Get the source code `git clone https://github.com/robcalcroft/jquery-loadmask-plus.git`
 2. [Install Ruby](https://www.ruby-lang.org/en/downloads/)
-3. Install Compass `gem update --system && gem install compass`
+3. Install Compass 
+```bash 
+gem update --system && gem install compass```
 4. Install dependancies `npm install gulp jshint -g && npm install`
 5. Build out the source `gulp`
 
