@@ -17,9 +17,7 @@ My additional functionality is noted in the original README document from the or
 ####Development install
 1. Get the source code `git clone https://github.com/robcalcroft/jquery-loadmask-plus.git`
 2. [Install Ruby](https://www.ruby-lang.org/en/downloads/)
-3. Install Compass 
-```bash 
-gem update --system && gem install compass```
+3. Install Compass `gem update --system && gem install compass`
 4. Install dependancies `npm install gulp jshint -g && npm install`
 5. Build out the source `gulp`
 
@@ -40,13 +38,15 @@ Please note that only elements that accept child nodes can be masked.
 
 To start using the plugin you need to include jquery.loadmask.css and jquery.loadmask.js (or its minified version jquery.loadmask.min.js) to your html page:
 
-<link href="jquery.loadmask.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="jquery.loadmask.min.js"></script>
+```html
+<link rel="stylesheet" type="text/css" href="//cdn.calcroft.co/jquery.loadmask-plus.min.css" />
+<script type="text/javascript" src="//cdn.calcroft.co/jquery.loadmask-plus.min.js"></script>
+```
 
 ##Masking
 To put a mask over an element (or multiple elements) simply call `mask(options)` method :
 
-```
+```javascript
 $("#myDiv").mask() // Will show the loading animation in white
 
 $("#myDiv").mask({
@@ -73,7 +73,7 @@ The `delay` property sets a delay in milliseconds before element(s) is masked. I
 ##Unmasking
 To remove a previously displayed mask from an element (or multiple elements) call `unmask()` without any parameters:
 
-```
+```javascript
 $("#mydiv").unmask();
 ```
 
@@ -83,7 +83,7 @@ Calling `unmask()` on a delayed mask prevents it from showing up.
 
 You can use `isMasked()` method on a single element to check if it is currently masked. Please note that this method will return `false` whilst mask is delayed.
 
-```
+```javascript
 if($("#mydiv").isMasked()) { ... }
 ```
 
