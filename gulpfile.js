@@ -61,8 +61,8 @@ gulp.task('scss', function() {
 /**
  * Remove ./src/css
  */
-gulp.task('remove-css', function() {
-	del(['./src/css'])
+gulp.task('remove-css', ['scss'], function() {
+	del(['./src/css/'])
 });
 
 gulp.task('default', ['clean', 'js', 'scss', 'remove-css'])
