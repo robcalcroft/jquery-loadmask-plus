@@ -1,5 +1,7 @@
 # jquery-loadmask-plus
 
+[![Build Status](https://travis-ci.org/robcalcroft/jquery-loadmask-plus.svg?branch=master)](https://travis-ci.org/robcalcroft/jquery-loadmask-plus)
+
 A fork of [jquery-loadmask](https://code.google.com/p/jquery-loadmask/) which intends to modernise the look and feel of the original plugin by way of CSS updates and improved API usage.
 
 The source code was exported to GitHub from Google Code
