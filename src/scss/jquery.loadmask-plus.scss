@@ -36,6 +36,11 @@
         color: white;
         font: normal 11px arial, helvetica, sans-serif;
     }
+    
+    // Loading animation colour
+    svg path, svg rect {
+        fill: white;
+    }
 }
 
 .masked {
@@ -48,7 +53,4 @@
     visibility: hidden !important;
 }
 
-// Loading animation colour
-svg path, svg rect {
-    fill: white;
-}
+
